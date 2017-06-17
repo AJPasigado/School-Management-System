@@ -1,0 +1,317 @@
+/* For Floating Button */
+
+#floating-button{
+	width: 70px;
+	height: 70px;
+ 	border-radius: 50%;
+	background: #337ab7;
+ 	position: fixed;
+  	bottom: 50px;
+  	right: 50px;
+  	cursor: pointer;
+	box-shadow: 1px 1px 10px #333333;
+}
+.plus{
+	margin: 15px;
+  	width: 40px;
+}
+
+
+/* For Navigation Bar Button */
+.paginationBar {
+ 	position: fixed;
+  	bottom: 50px;
+	right: 150px;
+	box-shadow: 1px 1px 10px #333333;
+}
+#myButton p {
+    	position: fixed;
+    	left: -60px;
+    	transition: 0.3s;
+    	padding: 15px; 
+    	width: 120px;
+    	text-decoration: none; 
+    	font-size: 18px;
+    	color: white; 
+    	border-radius: 0 5px 5px 0; 
+}
+#myButton p:hover {
+    	left: 0;
+}
+#about {
+    	top: 20px;
+    	background-color: #337ab7;
+	box-shadow: 1px 1px 10px #333333;
+}
+#about:hover {
+    	top: 20px;
+    	background-color: #337ab7;
+}
+
+
+/* For Navigation Pane */
+
+#main {
+	margin-left: 0px;
+}
+.sidenav {
+	height: 100%;
+	position: fixed;
+	width: 0px; 
+	z-index: 1; 
+	top: 0;
+	left: 0;
+	background-color:#337ab7; 
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+	white-space: nowrap;
+	border-radius: 0 10px 10px 0; 
+}
+.sidenavicons {
+	width: 35px;
+	margin-right: 20px;
+}
+.sidenav a {
+	padding: 8px 8px 8px 40px;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	display: block;
+	transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+	color: white;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 20px;
+	margin-left: 50px;
+}
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 12px;}
+	.sidenavicons {width: 20px;margin-right: 20px;}
+}
+
+
+/* For Animations */
+
+@keyframes fadeIn {
+  	0% {
+    		opacity: 0;
+  	}
+
+  	100% {
+    		opacity: 1;
+  	}
+}
+@keyframes fadeInUp {
+ 	 0% {
+    		opacity: 0;
+    		transform: translate3d(0, 100%, 0);
+  	}
+  	100% {
+    		opacity: 1;
+    		transform: none;
+  	}
+}
+@keyframes fadeInDown {
+ 	 0% {
+    		opacity: 0;
+    		transform: translate3d(0, -100%, 0);
+  	}
+  	100% {
+    		opacity: 1;
+    		transform: none;
+  	}
+}
+@keyframes fadeInRight {
+ 	 0% {
+    		opacity: 0;
+    		transform: translate3d(100%, 0, 0);
+  	}
+  	100% {
+    		opacity: 1;
+    		transform: none;
+  	}
+}
+@keyframes fadeInLeft {
+ 	 0% {
+    		opacity: 0;
+    		transform: translate3d(-100%, 0, 0);
+  	}
+  	100% {
+    		opacity: 1;
+    		transform: none;
+  	}
+}
+.scene_element {
+	animation-duration: 1s;
+	transition-timing-function: ease-in;
+	animation-fill-mode: both;
+}
+.scene_element--fadein {
+	animation-name: fadeIn;
+}
+.scene_element--fadeinup {
+	animation-name: fadeInUp;
+}
+.scene_element--fadeindown {
+	animation-name: fadeInDown;
+}
+.scene_element--fadeinright {
+	animation-name: fadeInRight;
+}
+.scene_element--fadeinleft {
+	animation-name: fadeInLeft;
+}
+
+
+/* For Specific Visual Designs */
+/* Login Page */
+
+.login-html, .login-body {
+	max-width: 100%;
+	overflow-x: hidden;
+	background-color: #333333;
+	text-shadow: 2px 2px 60px #333333;
+	color: white;
+	background-attachment: fixed;
+}
+.login-form {
+    	width: 10%;
+}
+.login-login {
+ 	width: 300px;
+}
+.login-input{
+	margin: 10px;
+}
+.login-btn{
+    	width: 100px;
+}
+.login-pic{
+    	width: 250px;
+}
+
+
+/* Home Page */
+
+.home-html, .home-body {
+    	max-width: 100%;
+    	overflow-x: hidden;
+	background-color: #333333;
+    	text-shadow: 2px 2px 60px #333333;
+    	color: white;
+    	background-attachment: fixed;
+
+}
+.home-welcome{
+    	margin-top: 70px;
+}
+.home-logout{
+    	margin-top: 10px;
+    	font-size: 12px;
+}
+.home-icons{
+    	width: 150px;
+    	margin-top: 100px;
+}
+.home-footer{
+    	margin-top: 70px;
+    	margin-bottom: 100px;
+}
+.home-pages{
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
+/* Students Page */
+
+.student-body {
+	background-color: #333333;
+	color: white;
+	overflow-x: hidden;
+}
+.student-header {
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+.student-header-label {
+	margin-top: 20px;
+	font-size: 25px;
+}
+.student-table {
+	background-color: white;
+	border-radius: 10px;
+	color: #333333;
+	margin: auto;
+	width: 90%;
+	margin-bottom: 150px;
+}
+.student-table-header a {
+	text-decoration: none;
+	color: black;
+}
+.student-modal-add {
+	color: #333333;
+}
+.student-table-header {
+	font-size: 12px;
+}
+.student-table-icons {
+	width: 12px;
+}
+.student-logo {
+	margin-top: 20px;
+	width: 120px;
+}
+.student-back {
+	padding: 0;
+	width: 10px;
+}
+
+/* Accounts Page */
+
+.accounts-table {
+	background-color: white;
+	border-radius: 10px;
+	color: #333333;
+	margin: auto;
+	width: 60%;
+}
+.religion-table {
+	background-color: white;
+	border-radius: 10px;
+	color: #333333;
+	margin: auto;
+	width: 40%;
+}
+
+/* Other Pages */
+
+.subjects-table {
+	background-color: white;
+	border-radius: 10px;
+	color: #333333;
+	margin: auto;
+	width: 50%;
+}
+.programs-table {
+	background-color: white;
+	border-radius: 10px;
+	color: #333333;
+	margin: auto;
+	width: 60%;
+}
+.grades-table-icons {
+	width: 10px;
+}
